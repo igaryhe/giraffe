@@ -5,14 +5,16 @@ using UnityEngine;
 public class Tongue : MonoBehaviour
 {
 
-    public GameObject tongueGO;
-    public GameObject targetGO;
-
     public MousePosition mouse;
+
+    SpringJoint2D sj;
+    LineRenderer line;
 
     // Start is called before the first frame update
     void Start()
     {
+      sj = GetComponent<SpringJoint2D>();
+      line = GetComponent<LineRenderer>();
         
     }
 
@@ -22,18 +24,21 @@ public class Tongue : MonoBehaviour
       if (Input.GetMouseButtonDown(0)) {
         print("hello!");
 
-        targetGO.SetActive(true);
-        // use mouse position to set the transform of the target
-
-        targetGO.transform.position = mouse.transform.position;
-
-        tongueGO.SetActive(true);
-
-        // stretch the tongue so that it reaches from tip of head to
-        // the target
-
+        transform.position = mouse.transform.position;
 
       }
+
+
+
+      print("mouth: " + sj.connectedBody.transform.position);
+      print("end: " + sj.connectedBody.transform.position);
+
+      line.SetPosition(0, sj.connectedBody.transform.position);
+      line.SetPosition(1, transform.position);
+
+      // draw red line for tongue (for now)
+      // get mouth position
+      //
 
         
     }

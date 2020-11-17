@@ -14,6 +14,7 @@ public class MousePosition : MonoBehaviour
 
         //now translate this position to world coordinates
         var mousePositionInWorld = Camera.main.ScreenToWorldPoint(mousePositionInScreen);
+	mousePositionInWorld.z = 0;
 
         //move the mouse target to the mouse position
         transform.position = mousePositionInWorld;
