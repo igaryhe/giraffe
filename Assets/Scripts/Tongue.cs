@@ -22,24 +22,13 @@ public class Tongue : MonoBehaviour
     void Update()
     {
       if (Input.GetMouseButtonDown(0)) {
-        print("hello!");
-
+	// set end of tongue (us) to where the mouse clicked
         transform.position = mouse.transform.position;
-
       }
 
-
-
-      print("mouth: " + sj.connectedBody.transform.position);
-      print("end: " + sj.connectedBody.transform.position);
-
+      // draw a simple line for the tongue
       line.SetPosition(0, sj.connectedBody.transform.position);
       line.SetPosition(1, transform.position);
-
-      // draw red line for tongue (for now)
-      // get mouth position
-      //
-
         
     }
 }
