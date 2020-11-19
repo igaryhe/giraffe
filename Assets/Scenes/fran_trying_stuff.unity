@@ -219,7 +219,6 @@ Transform:
   m_LocalScale: {x: 1.1388378, y: 0.62432826, z: 1}
   m_Children:
   - {fileID: 1993268288}
-  - {fileID: 601683786}
   m_Father: {fileID: 851262284}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
