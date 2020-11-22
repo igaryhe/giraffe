@@ -22,8 +22,14 @@ public class Tongue : MonoBehaviour
     void Update()
     {
       if (Input.GetMouseButtonDown(0)) {
-	// set end of tongue (us) to where the mouse clicked
+	      // set end of tongue (us) to where the mouse clicked
         transform.position = mouse.transform.position;
+      }
+
+      // just some hacky placeholder way to get giraffe to get off ground
+      if (Input.GetMouseButtonDown(1)) {
+
+
       }
 
       // draw a simple line for the tongue
