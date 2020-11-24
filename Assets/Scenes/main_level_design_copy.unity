@@ -7706,20 +7706,60 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8618161185959589250, guid: 054a957cbe74e7349b65320747be2a1b,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8618161185993639217, guid: 054a957cbe74e7349b65320747be2a1b,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8618161185993639217, guid: 054a957cbe74e7349b65320747be2a1b,
+        type: 3}
+      propertyPath: m_Mass
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8618161186062168721, guid: 054a957cbe74e7349b65320747be2a1b,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8618161186103867908, guid: 054a957cbe74e7349b65320747be2a1b,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8618161186103867909, guid: 054a957cbe74e7349b65320747be2a1b,
         type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8618161186105397459, guid: 054a957cbe74e7349b65320747be2a1b,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8618161186105397459, guid: 054a957cbe74e7349b65320747be2a1b,
+        type: 3}
+      propertyPath: m_Mass
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8618161186591381593, guid: 054a957cbe74e7349b65320747be2a1b,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8618161187149207616, guid: 054a957cbe74e7349b65320747be2a1b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1488.9
+      value: 241
       objectReference: {fileID: 0}
     - target: {fileID: 8618161187149207616, guid: 054a957cbe74e7349b65320747be2a1b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 42.3
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 8618161187149207616, guid: 054a957cbe74e7349b65320747be2a1b,
         type: 3}
@@ -7770,6 +7810,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: giraffe
+      objectReference: {fileID: 0}
+    - target: {fileID: 8618161187631345409, guid: 054a957cbe74e7349b65320747be2a1b,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8618161187631345409, guid: 054a957cbe74e7349b65320747be2a1b,
+        type: 3}
+      propertyPath: m_Mass
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 054a957cbe74e7349b65320747be2a1b, type: 3}
