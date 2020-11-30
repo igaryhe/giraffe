@@ -149,7 +149,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.21725273, y: 2.1580448}
-  m_ConnectedAnchor: {x: -0.10781249, y: 0.3162183}
+  m_ConnectedAnchor: {x: -0.10789308, y: 0.31623024}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
@@ -292,7 +292,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -1.7820042, y: 0.56463045}
+  m_ConnectedAnchor: {x: -1.782074, y: 0.5646324}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!60 &8618161185993639220
@@ -476,7 +476,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.049900055, y: 1.2225504}
-  m_ConnectedAnchor: {x: -0.069909096, y: -0.8408475}
+  m_ConnectedAnchor: {x: -0.069885254, y: -0.84085464}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
@@ -648,7 +648,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.28799585, y: -0.6046304}
+  m_ConnectedAnchor: {x: -0.28793335, y: -0.60463905}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!1 &8618161186591381594
@@ -801,7 +801,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.14921568, y: -0.54080516}
+  m_ConnectedAnchor: {x: -0.14923598, y: -0.54081}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
@@ -848,7 +848,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8618161187149207619}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 6.64, y: 1.64, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children:
   - {fileID: 5208363271860178000}
@@ -1011,7 +1011,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.23199998, y: -3.197}
+  m_ConnectedAnchor: {x: 0.23208618, y: -3.1969929}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!1001 &8602625698664224382
@@ -1021,6 +1021,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8618161187149207616}
     m_Modifications:
+    - target: {fileID: 4550175704681463155, guid: f943b1f4636194346a56ecb97036df98,
+        type: 3}
+      propertyPath: m_Positions.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4550175704681463155, guid: f943b1f4636194346a56ecb97036df98,
         type: 3}
       propertyPath: m_Parameters.colorGradient.key2.r
@@ -1089,7 +1094,22 @@ PrefabInstance:
     - target: {fileID: 4550175706321902115, guid: f943b1f4636194346a56ecb97036df98,
         type: 3}
       propertyPath: m_Distance
-      value: 4.682816
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550175706321902115, guid: f943b1f4636194346a56ecb97036df98,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: 1678.2227
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550175706321902115, guid: f943b1f4636194346a56ecb97036df98,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: 26.544823
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550175706321902115, guid: f943b1f4636194346a56ecb97036df98,
+        type: 3}
+      propertyPath: m_AutoConfigureDistance
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4550175706321902124, guid: f943b1f4636194346a56ecb97036df98,
         type: 3}
