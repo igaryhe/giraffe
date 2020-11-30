@@ -8,6 +8,7 @@ public class GrappleGun : MonoBehaviour
     [Header("Layers Settings:")]
     [SerializeField] private bool grappleToAll = false;
     [SerializeField] private int grappableLayerNumber = 9;
+    [SerializeField] private string grappleLayerIgnore = "giraffe";
 
     [Header("Main Camera:")]
     public Camera m_camera;
@@ -48,10 +49,16 @@ public class GrappleGun : MonoBehaviour
     [HideInInspector] public Vector2 grapplePoint;
     [HideInInspector] public Vector2 grappleDistanceVector;
 
+    private int ignoreLayerMask;
+
     private void Start()
     {
         grappleRope.enabled = false;
         m_springJoint2D.enabled = false;
+
+        // construct layer mask to ignore a layer during raycast
+        int ignoreLayerIdx = LayerMask.NameToLayer(grappleLayerIgnore);
+        ignoreLayerMask = ~(1 << ignoreLayerIdx);
 
     }
 
@@ -116,7 +123,9 @@ public class GrappleGun : MonoBehaviour
         Vector2 distanceVector = m_camera.ScreenToWorldPoint(Input.mousePosition) - gunPivot.position;
         if (Physics2D.Raycast(firePoint.position, distanceVector.normalized))
         {
-            RaycastHit2D _hit = Physics2D.Raycast(firePoint.position, distanceVector.normalized);
+            RaycastHit2D _hit = Physics2D.Raycast(firePoint.position,
+                distanceVector.normalized, Mathf.Infinity, 
+                ignoreLayerMask);
             if (_hit.transform.gameObject.layer == grappableLayerNumber || grappleToAll)
             {
                 if (Vector2.Distance(_hit.point, firePoint.position) <= maxDistnace || !hasMaxDistance)
