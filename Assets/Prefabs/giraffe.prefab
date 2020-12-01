@@ -149,7 +149,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.21725273, y: 2.1580448}
-  m_ConnectedAnchor: {x: -0.10789308, y: 0.31623024}
+  m_ConnectedAnchor: {x: -0.107812636, y: 0.3162183}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
@@ -292,7 +292,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -1.782074, y: 0.5646324}
+  m_ConnectedAnchor: {x: -1.7820042, y: 0.56463045}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!60 &8618161185993639220
@@ -476,7 +476,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.049900055, y: 1.2225504}
-  m_ConnectedAnchor: {x: -0.069885254, y: -0.84085464}
+  m_ConnectedAnchor: {x: -0.06990969, y: -0.8408475}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
@@ -648,7 +648,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.28793335, y: -0.60463905}
+  m_ConnectedAnchor: {x: -0.28799593, y: -0.6046304}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!1 &8618161186591381594
@@ -801,7 +801,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.14923598, y: -0.54081}
+  m_ConnectedAnchor: {x: -0.14921534, y: -0.5408051}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
@@ -1011,7 +1011,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.23208618, y: -3.1969929}
+  m_ConnectedAnchor: {x: 0.23199975, y: -3.1970003}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!1001 &8602625698664224382
@@ -1094,7 +1094,7 @@ PrefabInstance:
     - target: {fileID: 4550175706321902115, guid: f943b1f4636194346a56ecb97036df98,
         type: 3}
       propertyPath: m_Distance
-      value: 1
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 4550175706321902115, guid: f943b1f4636194346a56ecb97036df98,
         type: 3}
@@ -1110,6 +1110,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AutoConfigureDistance
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550175706321902115, guid: f943b1f4636194346a56ecb97036df98,
+        type: 3}
+      propertyPath: m_DampingRatio
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4550175706321902115, guid: f943b1f4636194346a56ecb97036df98,
+        type: 3}
+      propertyPath: m_Frequency
+      value: 1000000
       objectReference: {fileID: 0}
     - target: {fileID: 4550175706321902124, guid: f943b1f4636194346a56ecb97036df98,
         type: 3}
