@@ -2,13 +2,12 @@
 
 public class GrappleGun : MonoBehaviour
 {
-    [Header("Cursor")] public GameObject cursor;
+    public GameObject cursor;
     [Header("Scripts Ref:")]
     public GrappleRope grappleRope;
 
     [Header("Layers Settings:")]
     [SerializeField] private int grappableLayerNumber = 9;
-    [SerializeField] private string grappleLayerIgnore = "giraffe";
 
     [Header("Main Camera:")]
     public Camera m_camera;
@@ -47,25 +46,20 @@ public class GrappleGun : MonoBehaviour
 
     [HideInInspector] public Vector2 grapplePoint;
     [HideInInspector] public Vector2 grappleDistanceVector;
-
-    private int ignoreLayerMask;
+    
+    private int layerMask;
 
     private void Start()
     {
         grappleRope.enabled = false;
         m_springJoint2D.enabled = false;
-
-        // construct layer mask to ignore a layer during raycast
-        int ignoreLayerIdx = LayerMask.NameToLayer(grappleLayerIgnore);
-        ignoreLayerMask = ~(1 << ignoreLayerIdx);
-
+        layerMask = 1 << grappableLayerNumber;
     }
 
     private void Update()
     {
         Vector2 distanceVector = m_camera.ScreenToWorldPoint(Input.mousePosition) - gunPivot.position;
-        var hit = Physics2D.Raycast(firePoint.position,distanceVector.normalized, maxDistance, 
-            ignoreLayerMask);
+        var hit = Physics2D.Raycast(firePoint.position,distanceVector.normalized, maxDistance, layerMask);
         if (!hit)
         {
             cursor.transform.position = transform.position + maxDistance * (Vector3) distanceVector.normalized;
@@ -134,8 +128,7 @@ public class GrappleGun : MonoBehaviour
     private void SetGrapplePoint()
     {
         Vector2 distanceVector = m_camera.ScreenToWorldPoint(Input.mousePosition) - gunPivot.position;
-        var hit = Physics2D.Raycast(firePoint.position,distanceVector.normalized, maxDistance, 
-                ignoreLayerMask);
+        var hit = Physics2D.Raycast(firePoint.position,distanceVector.normalized, maxDistance, layerMask);
         if (!hit) return;
         grapplePoint = hit.point;
         grappleDistanceVector = grapplePoint - (Vector2)gunPivot.position;

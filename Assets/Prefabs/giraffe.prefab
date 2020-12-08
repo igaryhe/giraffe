@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8618161185959589263}
   m_LocalRotation: {x: -0, y: -0, z: 0.033431478, w: 0.9994411}
-  m_LocalPosition: {x: 0.62074256, y: 1.8665679, z: -2}
+  m_LocalPosition: {x: 0.63, y: 1.8, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8618161187149207616}
@@ -149,7 +149,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.21725273, y: 2.1580448}
-  m_ConnectedAnchor: {x: -0.107812636, y: 0.3162183}
+  m_ConnectedAnchor: {x: -0.10061828, y: 0.28509974}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
@@ -356,7 +356,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8618161186062168722}
   m_LocalRotation: {x: -0, y: -0, z: 0.033431478, w: 0.9994411}
-  m_LocalPosition: {x: 0.822, y: 3.726, z: -1}
+  m_LocalPosition: {x: 0.822, y: 3.69, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8618161187149207616}
@@ -476,7 +476,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.049900055, y: 1.2225504}
-  m_ConnectedAnchor: {x: -0.06990969, y: -0.8408475}
+  m_ConnectedAnchor: {x: -0.06990969, y: -0.8768475}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
@@ -680,7 +680,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8618161186591381594}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.508, y: 1.317, z: -3}
+  m_LocalPosition: {x: 0.52, y: 1.21, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8618161187149207616}
@@ -801,7 +801,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.14921534, y: -0.5408051}
+  m_ConnectedAnchor: {x: -0.14918156, y: -0.5813301}
   m_UseMotor: 1
   m_Motor:
     m_MotorSpeed: 0
@@ -1011,7 +1011,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.23199975, y: -3.1970003}
+  m_ConnectedAnchor: {x: 0.22000015, y: -3.0900002}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!1001 &8602625698664224382
