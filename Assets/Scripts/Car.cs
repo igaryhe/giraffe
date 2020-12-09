@@ -5,10 +5,8 @@ public class Car : MonoBehaviour
     private Rigidbody2D _rb;
     [SerializeField] private Vector2 dir;
     [SerializeField] private float speed;
-    [SerializeField] private float upbound;
-    [SerializeField] private float lowbound;
-    
-    
+    [SerializeField] private float upperBound;
+    [SerializeField] private float lowerBound;
 
     private void Start()
     {
@@ -18,7 +16,7 @@ public class Car : MonoBehaviour
     private void Update()
     {
         var pos = transform.position;
-        if (Mathf.Abs(pos.x) > upbound)
+        if (Mathf.Abs(pos.x) > upperBound)
         {
             transform.position = new Vector3(lowbound, pos.y, pos.z);
         } else if (Mathf.Abs(pos.x) < lowbound)
