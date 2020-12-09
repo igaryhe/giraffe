@@ -18,10 +18,10 @@ public class Car : MonoBehaviour
         var pos = transform.position;
         if (Mathf.Abs(pos.x) > upperBound)
         {
-            transform.position = new Vector3(lowbound, pos.y, pos.z);
-        } else if (Mathf.Abs(pos.x) < lowbound)
+            transform.position = new Vector3(lowerBound, pos.y, pos.z);
+        } else if (Mathf.Abs(pos.x) < lowerBound)
         {
-            transform.position = new Vector3(upbound, pos.y, pos.z);
+            transform.position = new Vector3(upperBound, pos.y, pos.z);
         }
     }
 
