@@ -48,6 +48,8 @@ public class GrappleGun : MonoBehaviour
     [HideInInspector] public Vector2 grappleDistanceVector;
     
     private int layerMask;
+    private bool isCloud;
+    private Transform _cloud;
 
     private void Start()
     {
@@ -100,12 +102,18 @@ public class GrappleGun : MonoBehaviour
             grappleRope.enabled = false;
             m_springJoint2D.enabled = false;
             m_rigidbody.gravityScale = 1;
+            isCloud = false;
         }
         else
         {
             Vector2 mousePos = m_camera.ScreenToWorldPoint(Input.mousePosition);
             RotateGun(mousePos, true);
         }
+
+        /*if (isCloud)
+        {
+            grapplePoint = _cloud.position;
+        }*/
     }
 
     void RotateGun(Vector3 lookPoint, bool allowRotationOverTime)
@@ -131,6 +139,8 @@ public class GrappleGun : MonoBehaviour
         var hit = Physics2D.Raycast(firePoint.position,distanceVector.normalized, maxDistance, layerMask);
         if (!hit) return;
         grapplePoint = hit.point;
+        isCloud = true;
+        _cloud = hit.collider.transform;
         grappleDistanceVector = grapplePoint - (Vector2)gunPivot.position;
         grappleRope.enabled = true;
     }
