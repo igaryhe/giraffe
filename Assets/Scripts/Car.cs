@@ -21,6 +21,9 @@ public class Car : MonoBehaviour
         if (Mathf.Abs(pos.x) > upbound)
         {
             transform.position = new Vector3(lowbound, pos.y, pos.z);
+        } else if (Mathf.Abs(pos.x) < lowbound)
+        {
+            transform.position = new Vector3(upbound, pos.y, pos.z);
         }
     }
 
