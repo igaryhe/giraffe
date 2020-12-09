@@ -137,7 +137,12 @@ public class GrappleGun : MonoBehaviour
     {
         Vector2 distanceVector = m_camera.ScreenToWorldPoint(Input.mousePosition) - gunPivot.position;
         var hit = Physics2D.Raycast(firePoint.position,distanceVector.normalized, maxDistance, layerMask);
-        if (!hit) return;
+        if (!hit)
+        {
+            AudioManager.Instance.PlayMiss();
+            return;
+        }
+        AudioManager.Instance.PlayAttach();
         grapplePoint = hit.point;
         isCloud = true;
         _cloud = hit.collider.transform;
